@@ -15,7 +15,6 @@ public class Propriedades {
 	public enum Ambientes {
 		DEFAULT ("http://sampleapp.tricentis.com/101/app.php");
 
-		
 		private String fields;
 		 
 		private Ambientes (String fields) {
