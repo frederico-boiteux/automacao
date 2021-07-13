@@ -1,5 +1,7 @@
 package automacao.testes;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -18,8 +20,14 @@ public class CadastroTeste extends BaseTest{
 	}
 	
 	@Test
-	public void test1 () {
+	public void teste1_verificaCarregamentoPagina () {
+		assertEquals("Enter Vehicle Data", page.obterTexto());
 		System.out.println("Teste");
 	}
+	
+	@Test
+	public void test2_validarMake () {
 
-}
+		}
+	}
+
