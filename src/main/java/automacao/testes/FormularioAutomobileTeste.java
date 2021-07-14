@@ -41,6 +41,7 @@ public class FormularioAutomobileTeste extends ModelTest{
 	@Test
 	public void t4_validarMensagemSucesso () {
 		acessarTela();
+		//Enter Vehicle Data
 		page.selecionarComboMake("Ford");
 		page.setEnginePerformance("20");
 		page.setDateOfManufacture("07/13/2021");
@@ -51,6 +52,7 @@ public class FormularioAutomobileTeste extends ModelTest{
 		page.setAnnualMileage("265");
 		page.clicarBotaoNextInsuranceData();
 		
+		//Enter Insurance Data
 		page.setFirstName("Fulano");
 		page.setLastName("DeTal");
 		page.setDateOfBirth("10/10/1995");
@@ -69,6 +71,7 @@ public class FormularioAutomobileTeste extends ModelTest{
 		page.setPicture("/src/main/resources/Teste.PNG");
 		page.clicarBotaoNextProductData();
 		
+		//Enter Product Data
 		page.setStartDate("10/15/2021");
 		page.setInsuranceSum("7.000.000,00");
 		page.setMeritRating("Bonus 5");
@@ -78,9 +81,11 @@ public class FormularioAutomobileTeste extends ModelTest{
 		page.setCourtesyCar("Yes");
 		page.clicarBotaoNextPriceOption();
 		
+		//Select Price Option
 		page.clicarPrice();
 		page.clicarBotaoNextSendQuote();
 		
+		//Send Quote
 		page.setEmail("teste@teste.com");
 		page.setPhone("5571988887777");
 		page.setUsername("teste");

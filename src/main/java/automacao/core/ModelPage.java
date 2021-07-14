@@ -16,6 +16,7 @@ public class ModelPage {
 	}
 	
 	public void uploadArquivo (String path, By by) {
+		esperaSugestivaGenerica(30, by);
 		WebElement uploadElement = getDriver().findElement(by);
 		uploadElement.sendKeys(path);
 	}
@@ -38,7 +39,6 @@ public class ModelPage {
 		WebDriverWait wait = new WebDriverWait(getDriver(), time);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
-	
 	
 	public void selecionarCombo(By by, String tipo) {
 		esperaSugestivaGenerica(30, by);
