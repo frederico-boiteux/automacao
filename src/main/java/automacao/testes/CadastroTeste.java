@@ -66,7 +66,7 @@ public class CadastroTeste extends BaseTest{
 		page.clicarHobbiesOther();
 		page.clicarHobbiesSkydiving();
 		page.setWebSite("www.teste.com");
-		page.setPicture("C:\\Temp\\IDENTIDADE.jpg");
+		//page.setPicture("C:\\Temp\\IDENTIDADE.jpg");
 		page.clicarBotaoNextProductData();
 		
 		page.setStartDate("10/15/2021");

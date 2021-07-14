@@ -131,7 +131,7 @@ public class CadastroPage extends BasePage {
 	}
 	
 	public void setPicture (String valor) {
-		uploadArquivo(valor);
+		uploadArquivo(valor, By.id("open"));
 	}
 	
 	public void clicarBotaoNextProductData () {
@@ -175,7 +175,6 @@ public class CadastroPage extends BasePage {
 	}
 	
 	public void clicarBotaoNextSendQuote () {
-		esperaSugestivaGenerica(30, By.id("nextsendquote"));
 		clicarButton(By.id("nextsendquote"));
 	}
 	
@@ -208,7 +207,6 @@ public class CadastroPage extends BasePage {
 	}
 	
 	public String obterMensagemSucesso () {
-		esperaSugestivaGenerica(30, By.xpath("//div[@class='sweet-alert showSweetAlert visible']/h2"));
 		return obterTexto(By.xpath("//div[@class='sweet-alert showSweetAlert visible']/h2")).getText();
 	}
 	
