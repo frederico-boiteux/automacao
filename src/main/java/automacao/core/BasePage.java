@@ -4,6 +4,7 @@ import static automacao.core.DriverFactory.getDriver;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,12 @@ import automacao.core.Propriedades;
 public class BasePage {
 
 	public void clicarButton(By by) {
-		getDriver().findElement(by).click();
+		getDriver().findElement(by).click();	
+	}
+	
+	public void uploadArquivo (String path) {
+		WebElement uploadElement = getDriver().findElement(By.id("open"));
+		uploadElement.sendKeys(path);
 	}
 
 	public WebElement obterTexto(By by) {
@@ -95,5 +101,13 @@ public class BasePage {
 			retorno.add(mensagem.getText());
 		}
 		return retorno;
+	}
+	
+	public void esperarPorTempoFixo(int segundos) {
+		try {
+			TimeUnit.SECONDS.sleep(segundos);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }

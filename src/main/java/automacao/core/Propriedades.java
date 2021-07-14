@@ -13,7 +13,7 @@ public class Propriedades {
 	}
 	
 	public enum Ambientes {
-		DEFAULT ("http://sampleapp.tricentis.com/101/app.php");
+		DEFAULT ("http://sampleapp.tricentis.com/101/index.php");
 
 		private String fields;
 		 

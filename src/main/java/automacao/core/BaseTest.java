@@ -32,6 +32,7 @@ public class BaseTest {
 
 	public static void acessarTela () {
 		getDriver().get(Propriedades.ambientes.toString());
+		getDriver().findElement(By.id("nav_automobile")).click();
 	}
 	
 	@AfterClass
