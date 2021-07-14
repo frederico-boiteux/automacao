@@ -15,12 +15,6 @@ public class ModelPage {
 		getDriver().findElement(by).click();	
 	}
 	
-	public void uploadArquivo (String path, By by) {
-		esperaSugestivaGenerica(30, by);
-		WebElement uploadElement = getDriver().findElement(by);
-		uploadElement.sendKeys(path);
-	}
-
 	public WebElement obterTexto(By by) {
 		esperaSugestivaGenerica(30, by);
 		return getDriver().findElement(by);

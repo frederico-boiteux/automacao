@@ -95,8 +95,5 @@ public class FormularioAutomobileTeste extends ModelTest{
 		page.clicarBotaoSend();
 		
 		assertEquals("Sending e-mail success!", page.obterMensagemSucesso());
-		
-		page.clicarBotaoOk();	
 	}
 }
-

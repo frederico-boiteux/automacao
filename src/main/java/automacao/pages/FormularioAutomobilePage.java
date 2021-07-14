@@ -131,7 +131,7 @@ public class FormularioAutomobilePage extends ModelPage {
 	}
 	
 	public void setPicture (String valor) {
-		uploadArquivo(valor, By.id("open"));
+		escrever(By.id("picture"), valor);
 	}
 	
 	public void clicarBotaoNextProductData () {

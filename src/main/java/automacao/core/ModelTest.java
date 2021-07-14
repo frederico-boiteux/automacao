@@ -43,7 +43,8 @@ public class ModelTest {
 	}
 	
 	@After
-	public void finalizarTestes() throws IOException {
+	public void finalizarTestes() throws IOException, InterruptedException {
+    	Thread.sleep(500);
 		TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
 		File arquivo = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(arquivo, new File(
