@@ -6,13 +6,13 @@ import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
-import automacao.core.BaseTest;
-import automacao.pages.CadastroPage;
+import automacao.core.ModelTest;
+import automacao.pages.FormularioAutomobilePage;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class CadastroTeste extends BaseTest{
+public class FormularioAutomobileTeste extends ModelTest{
 	
-	private CadastroPage page = new CadastroPage ();
+	private FormularioAutomobilePage page = new FormularioAutomobilePage ();
 	
 	@BeforeClass
 	public static void acessaTela () {

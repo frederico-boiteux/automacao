@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BasePage {
+public class ModelPage {
 
 	public void clicarButton(By by) {
 		esperaSugestivaGenerica(30, by);

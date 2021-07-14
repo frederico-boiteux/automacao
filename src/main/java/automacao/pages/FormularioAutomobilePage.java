@@ -2,9 +2,9 @@ package automacao.pages;
 
 import org.openqa.selenium.By;
 
-import automacao.core.BasePage;
+import automacao.core.ModelPage;
 
-public class CadastroPage extends BasePage {
+public class FormularioAutomobilePage extends ModelPage {
 	
 	public void clicarTipoAutomobile () {
 		clicarButton(By.id("nav_automobile"));

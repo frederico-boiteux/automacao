@@ -19,7 +19,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import automacao.core.Propriedades;
 
-public class BaseTest {
+public class ModelTest {
 	
 	@Rule
 	public TestName testName = new TestName(); 
